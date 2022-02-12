@@ -7,7 +7,8 @@ This project is created for jump into building any type of applications without 
 Those packages are presets for this project. It's fine to replace some packages that you're much familiar with.
 
 - `react-native@0.67.2` This project is created with using [official typescript preset](https://github.com/react-native-community/react-native-template-typescript)
-- `eslint-config-airbnb^19.0.4` I prefer strict rules for prevent my mistakes and help to make codes that keeps good readability.
+- `eslint-config-airbnb@^19.0.4` I prefer strict rules for prevent my mistakes and help to make codes that keeps good readability.
+- `@react-navigation/native@^6.0.8` Basic navigation library for react native.
   
 ## Minimal configuration steps
 
