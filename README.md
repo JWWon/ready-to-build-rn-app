@@ -4,10 +4,11 @@ This project is created for jump into building any type of applications without 
 
 ## Packages
 
-Those packages are built-in on this project. It's find to replace some packages that you're familiar with.
+Those packages are presets for this project. It's fine to replace some packages that you're much familiar with.
 
-- `react-native@0.67.2` I create this rn project with [official typescript preset](https://github.com/react-native-community/react-native-template-typescript)
-
+- `react-native@0.67.2` This project is created with using [official typescript preset](https://github.com/react-native-community/react-native-template-typescript)
+- `eslint-config-airbnb^19.0.4` I prefer strict rules for prevent my mistakes and help to make codes that keeps good readability.
+  
 ## Minimal configuration steps
 
 1. [yarn berry](https://github.com/yarnpkg/berry) with zero-install is used beneath this project. But due to some compatibility issues, you need to create `node_modules` on your local directory.
