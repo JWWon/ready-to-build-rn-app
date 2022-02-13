@@ -17,10 +17,10 @@ module.exports = {
           '.json',
         ],
         alias: {
-          '@/': './src',
           '@apis': './src/apis',
           '@components': './src/components',
           '@pages': './src/pages',
+          '@routers': './src/routers',
           '@utils': './src/utils',
         },
       },
