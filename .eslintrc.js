@@ -1,27 +1,24 @@
 module.exports = {
-  extends: ['@react-native-community', 'airbnb', 'airbnb-typescript'],
+  env: { 'react-native/react-native': true },
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:react-native/all',
+    'airbnb-typescript',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
   overrides: [
     {
-      files: ['*.js', '*.ts', '*.tsx'],
+      files: ['*.ts', '*.tsx'],
       rules: {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
         'no-undef': 'off',
-        'import/extensions': 'off',
-        'import/no-unresolved': 'off',
-        'react/function-component-definition': [
-          'error',
-          {
-            namedComponents: 'arrow-function',
-          },
-        ],
-        'react/jsx-closing-bracket-location': 'off',
-        'react/jsx-one-expression-per-line': [
-          'error',
-          {
-            allow: 'literal',
-          },
-        ],
+        'no-restricted-exports': 'off',
+        'react-native/no-raw-text': 'off',
+        'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
       },
     },
   ],
@@ -29,6 +26,6 @@ module.exports = {
   parserOptions: {
     project: ['./tsconfig.json'],
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react', 'react-native', 'react-hooks', 'jest'],
   root: true,
 };
