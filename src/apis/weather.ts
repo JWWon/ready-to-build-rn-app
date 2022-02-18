@@ -1,10 +1,11 @@
 /* eslint-disable import/prefer-default-export */
 import axios from 'axios';
+import Config from 'react-native-config';
 
 const openweather = axios.create({
   baseURL: 'https://api.openweathermap.org/data/2.5',
   params: {
-    appid: '1b6e8eef0a65adf0d38ed666aeb7b8aa',
+    appid: Config.OPENWEATHERMAP_APP_ID,
   },
 });
 

@@ -3,13 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "ENVFILE=.env react-native run-android",
+    "ios": "ENVFILE=.env react-native run-ios",
     "start": "react-native start",
     "clean": "cd android && ./gradlew clean && cd ../ios && pod deintegrate && pod cache clean --all && pod install && cd -",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "postinstall": "cd ios && pod insatll && cd -"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",
@@ -20,6 +19,7 @@
     "react": "17.0.2",
     "react-hook-form": "^7.27.0",
     "react-native": "0.67.2",
+    "react-native-config": "^1.4.5",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.11.1",
     "react-native-svg": "^12.1.1",
