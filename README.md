@@ -45,3 +45,5 @@ Those packages are presets for this project. It's fine to replace some packages 
      # __apply_Xcode_12_5_M1_post_install_workaround(installer)
    end
    ```
+
+4. You can delete samples inside `src/apis/` `src/components/`, `src/pages/`, `src/routers/` `.env.example` and jump into your new project.
