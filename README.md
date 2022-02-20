@@ -15,6 +15,7 @@ Those packages are presets for this project. It's fine to replace some packages 
 - `react-native-config@^1.4.5` Configure variables on both js and native.
 - `axios^0.25.0` Handle http request with plenty of options.
 - `react-query^3.34.15` Fetch server data with caching and synchronizing across the application.
+- `@testing-library/react-native@^9.0.0` Testing library for react native which provides lightweight component renderer and other plenty of testing tools.
 
 ## Minimal configuration steps
 

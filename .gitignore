@@ -70,3 +70,6 @@ buck-out/
 # Environments
 .env*
 !.env.example
+
+# Test
+coverage/

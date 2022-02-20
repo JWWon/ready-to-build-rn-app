@@ -19,6 +19,7 @@ module.exports = {
         'no-restricted-exports': 'off',
         'react-native/no-raw-text': 'off',
         'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
+        'react/require-default-props': ['error', { ignoreFunctionalComponents: true }],
       },
     },
   ],
