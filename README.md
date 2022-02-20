@@ -13,8 +13,8 @@ Those packages are presets for this project. It's fine to replace some packages 
 - `react-hook-form@^7.27.0` Simple and powerful form validator.
 - `yup@^0.32.11` Help to create flexible and strict validator schema.
 - `react-native-config@^1.4.5` Configure variables on both js and native.
-- `axios^0.25.0`
-- `react-query^3.34.15`
+- `axios^0.25.0` Handle http request with plenty of options.
+- `react-query^3.34.15` Fetch server data with caching and synchronizing across the application.
 
 ## Minimal configuration steps
 
@@ -26,7 +26,14 @@ Those packages are presets for this project. It's fine to replace some packages 
 
    It executes `pod install` automatically after installation is complete.
 
-2. [Optional] If you're not using `Apple Silicon` environment, You need to comment `__apply_Xcode_12_5_M1_post_install_workaround` on ios/Podfile.
+2. [Optional] If you want to configure build and deploy your app with single line command, you need to set up [fastlane](https://docs.fastlane.tools/) on this project.
+
+   ```bash
+   ~$ brew install fastlane
+   ~$ fastlane init
+   ```
+
+3. [Optional] If you're not using `Apple Silicon` environment, You need to comment `__apply_Xcode_12_5_M1_post_install_workaround` on ios/Podfile.
 
    ```ruby
    post_install do |installer|
